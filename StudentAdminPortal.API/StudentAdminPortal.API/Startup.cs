@@ -43,6 +43,9 @@ namespace StudentAdminPortal.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "StudentAdminPortal.API", Version = "v1" });
             });
+
+            // Injecting AutoMapper
+            services.AddAutoMapper(typeof(Startup).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
