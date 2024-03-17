@@ -1,10 +1,10 @@
-﻿using System;
+﻿using StudentAdminPortal.API.DataModels;
+using System;
 
-namespace StudentAdminPortal.API.DataModels
+namespace StudentAdminPortal.API.DomainModels
 {
     public class Student
     {
-
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -13,12 +13,9 @@ namespace StudentAdminPortal.API.DataModels
         public long Mobile { get; set; }
         public string ProfileImageUrl { get; set; }
         public Guid GenderId { get; set; }
-
-        // Navigation Property
+   
         public Gender Gender { get; set; }
-        public Address Address {get;set;}
-
-
+        public Address Address { get; set; }
 
     }
 }
