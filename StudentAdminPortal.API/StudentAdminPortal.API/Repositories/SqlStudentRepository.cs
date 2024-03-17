@@ -2,6 +2,7 @@
 using StudentAdminPortal.API.DataModels;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace StudentAdminPortal.API.Repositories
 {
@@ -13,9 +14,9 @@ namespace StudentAdminPortal.API.Repositories
         {
             this.context = context;
         }
-        public List<Student> GetStudents()
+        public async Task<List<Student>> GetStudentsAsync()
         {
-            return context.Student.Include(nameof(Gender)).Include(nameof(Address)).ToList();
+            return await context.Student.Include(nameof(Gender)).Include(nameof(Address)).ToListAsync();
         }
     }
 }
