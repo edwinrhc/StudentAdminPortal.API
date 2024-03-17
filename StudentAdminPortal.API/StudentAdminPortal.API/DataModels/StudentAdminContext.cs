@@ -7,6 +7,7 @@ namespace StudentAdminPortal.API.DataModels
         public StudentAdminContext(DbContextOptions<StudentAdminContext> options): base(options)
         {
             
+
         }
 
         public DbSet<Student> Student { get; set; }
