@@ -1,6 +1,6 @@
-﻿INSERT INTO GENDER (Id, Description) VALUES ('6f08fab6-c62e-4306-9d77-c82c9c6a23ac','Male')
-INSERT INTO GENDER (Id, Description) VALUES ('54182038-4abf-42ff-b05a-0f4c414cbc8b','Female')
-INSERT INTO GENDER (Id, Description) VALUES ('177a07f2-3493-49a4-a720-ac96c51c7c43','Other')
+﻿INSERT INTO GENDERS (Id, Description) VALUES ('6f08fab6-c62e-4306-9d77-c82c9c6a23ac','Male')
+INSERT INTO GENDERS (Id, Description) VALUES ('54182038-4abf-42ff-b05a-0f4c414cbc8b','Female')
+INSERT INTO GENDERS (Id, Description) VALUES ('177a07f2-3493-49a4-a720-ac96c51c7c43','Other')
 
 INSERT INTO STUDENT (Id, FirstName, LastName, DateOfBirth, Email, Mobile, ProfileImageUrl, GenderId) VALUES ('5fc32d8d-fe01-4acb-b059-7fc1f9e0d093','Debra','Burks','1989-05-16','Debra.Burks@gmaill.com',91254684566,NULL,'54182038-4abf-42ff-b05a-0f4c414cbc8b')
 INSERT INTO STUDENT (Id, FirstName, LastName, DateOfBirth, Email, Mobile, ProfileImageUrl, GenderId) VALUES ('f670d0c5-04f7-4dbc-9a1e-1ef62a729066','Kasha','Todd','1989-05-17','Kasha.Todd@gmaill.com',91254684576,NULL,'6f08fab6-c62e-4306-9d77-c82c9c6a23ac')
